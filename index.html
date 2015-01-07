@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+		<link rel="stylesheet" href="css/scytale.css">
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Communication</h1>
+					<h3>Talking securely in a word of eavesdroppers</h3>
+					<aside class="notes">
+						<ul>
+							<li>You might have heard of the NSA or GCHQ</li>
+							<li>Secure and private communication is a hot topic</li>
+							<li>We're going to look at some of the principles behind secure communication</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>About Me</h2>
+						<p>I'm Billy...</p>
+						<aside class="notes">
+						<ul>
+							<li>Hi, I'm Billy</li>
+						</ul>
+					</aside>
+					</section>
+					<section>
+						<h3>Software Engineer</h3>
+						<p>I work for BAFTA and Diversity and Ability</p>
+						<aside class="notes">
+						<ul>
+							<li>I build software and websites for people</li>
+							<li>Currently I work in the R&amp;D team in BAFTA</li>
+							<li>I also work for DnA, a company that provides training for people with disabilities</li>
+						</ul>
+					</aside>
+					</section>
+					<section>
+						<h3>Education</h3>
+						<p>I studied Computer Science and Security Science at UCL</p>
+						<p>I did A-levels in Maths, Further Maths, and Drama</p>
+						<aside class="notes">
+						<ul>
+							<li>If you're interested?</li>
+						</ul>
+					</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Tomorrow...</h2>
+					</section>
+					<section>
+						<h2>Encryption</h2>
+						<p>How can we protect messages from prying eyes?</p>
+					</section>
+					<section>
+						<h2>Decryption</h2>
+						<p>How can we read encrypted messages?</p>
+					</section>
+					<section>
+						<h2>Hacking</h2>
+						<p>How can we break into encrypted messages?</p>
+					</section>
+					<section>
+						<h2>Why?</h2>
+						<p>What are secure communications used for?</p>
+					</section>
+				</section>
+
+				<section class="thisevening">
+					<section>
+						<h2>This evening...</h2>
+					</section>
+					<section>
+						<h2>Scytales</h2>
+						<p class="small pale">(Pronounced like Italy)</p>
+						<p>Used by the Ancient Greeks and the Spartans as early as 7th century BC</p>
+						<ol class="small">
+							<li>Wrap a long strip of paper around a stick and write a message along the stick</li>
+							<li>Rotate the stick when you reach the end and write another line</li>
+							<li>Unwrap the paper to reveal your ciphertext</li>
+						</ol>
+						<aside class="notes">
+						<ul>
+							<li>Demo doing it</li>
+							<li>The message you write down is the plaintext, it's in English</li>
+							<li>The message you read off is the ciphertext, it's not understandable</li>
+						</ul>
+					</aside>
+					</section>
+					<section>
+						<h2>Demo</h2>
+						<ol>
+							<li>Get into groups of 3</li>
+							<li>Everyone grab a scytale and a worksheet</li>
+							<li>Make sure your group has 3 different coloured scytales</li>
+						</ol>
+						<aside class="notes">
+						<ul>
+							<li>There might not be enough scytales to go round, you might have to share</li>
+							<li>Some groups might have to have only 2 scytales</li>
+						</ul>
+					</aside>
+					</section>
+					<section class="scytale-task">
+						<div>
+						<h2>Demo</h2>
+						<ol>
+							<li>Encrypt a message using your scytale</li>
+							<li>Swap messages in your group</li>
+							<li>Try to decrypt each other's message</li>
+							<li>Swap scytales and try decrypting again</li>
+						</ol>
+						</div>
+						<p class="fragment timer">
+							<span class="minutes">15</span><span class="seconds">:00</span>
+						</p>
+					</section>
+					<section>
+						<h2>Thoughts?</h2>
+						<div class="block">
+							<p>What's good?</p>
+							<p class="fragment"><span class="pale">Quick, simple, robust</span></p>
+							<p>What's bad?</p>
+							<p class="fragment"><span class="pale">Easy to hack, clumsy for long messages</span></p>
+							<p>How could you hack this?</p>
+							<p class="fragment"><span class="pale">Have lots of scytales, use a computer</span></p>
+							<p>Why use it?</p>
+							<p class="fragment"><span class="pale">Message authentication</span></p>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h2>See you all tomorrow :)</h2>
+				</section>
+				<section>
+					<h2>Good morning</h2>
+				</section>
+
+				<section>
+					<section>
+						<h2>A Quick Primer on...</h2>
+					</section>
+					<section class="substitutionciphers">
+						<h2>Substitution Ciphers</h2>
+						<p class="pale">e.g. Ceasar Ciphers</p>
+						<p>Replace letters in your plaintext with random letters to produce your ciphertext</p>
+						<table class="fragment">
+							<tr><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr>
+							<tr><td>W</td><td>X</td><td>Y</td><td>Z</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td></tr>
+						</table>
+						<div class="fragment">HELLO HOW ARE YOU?</div>
+						<div class="fragment">DAHHK DKS WNA UKQ?</div>
+						<aside class="notes">
+							<ul>
+								<li>Take a plaintext message and replace each letter with a different one</li>
+								<li>How you pick the replacement letter is important and is dictated by your choice of cipher</li>
+								<li>Shift by 4 along the alphabet</li>
+								<li>The secret key is the amount to shift by</li>
+								<li>Easy to hack because there can only be 26 keys</li>
+								<li>What are some improvements to this cipher that people can see?</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="transpositionciphers">
+						<h2>Transposition Ciphers</h2>
+						<p class="pale">e.g. Scytale</p>
+						<p>Shuffle the letters in your plaintext to produce your ciphertext</p>
+						<div class="fragment">HELLO HOW ARE YOU?</div>
+						<div class="fragment">H AOEHRULOE?LW  O Y </div>
+						<aside class="notes">
+							<ul>
+								<li>Keep the actual letters the same but change their order</li>
+								<li>The secret key is the size of the scytale</li>
+								<li>Easy to hack because there are limited sizes of stick</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Padding</h2>
+						<p>Changing a letter into a number and back again</p>
+						<aside class="notes">
+							<ul>
+								<li>Some of your ciphers require arithmetic on the plaintext</li>
+								<li>It's not clear what a*7 might mean</li>
+								<li>So use a padding scheme to change a into a number</li>
+								<li>There's a padding scheme on the website</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="modarith">
+						<h2>Modulo Arithmetic</h2>
+						<p class="top"><code>a % n = b</code> or <code>a = b mod n</code></p>
+						<p><code class="fragment">6 % 5 = </code><code class="fragment">1</code></p>
+						<p><code class="fragment">(9 * 2) % 5 = </code><code class="fragment">3</code></p>
+						<p><code class="fragment">34 = 4 mod </code><code class="fragment">6</code></p>
+						<aside class="notes">
+							<ul>
+								<li>Some of your ciphers require modulo arithmetic</li>
+								<li>It's a form of counting where you go back to 0 when you reach a maximum number</li>
+								<li>Very similar to how a clock works</li>
+								<li></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Challenge</h2>
+						<ul>
+							<li>In groups learn two ciphers</li>
+							<li>Your group has an opponent group</li>
+							<li>Can you encrypt messages that your opponents can't hack?</li>
+							<li>Can you hack your opponents' messages?</li>
+						</ul>
+						<aside class="notes">
+							<p>Today I'm going to split you up into groups of 5 or 6 and pit you against each other in a cat and mouse game of encryption, decryption and hacking.</p>
+							<p>Here's the goal: to use encryption methods in a way that will keep your group's messages secure. You're also tasked with hacking into the encryption created by your opponents.</p>
+							<p>You have a day to learn about encryption, decryption and hacking. You then have to apply that knowledge and best the other groups.</p>
+						</aside>
+					</section>
+					<section class="yourgroups">
+						<h2>The Groups</h2>
+						<table><tbody>
+							<tr><td>
+								<ul>
+									<li>Group One</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+								</ul>
+							</td><td>
+								<ul>
+									<li>Group Two</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+								</ul>
+							</td><td>
+								<ul>
+									<li>Group Three</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+								</ul>
+							</td></tr>
+							<tr><td>
+								<ul>
+									<li>Group Four</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+								</ul>
+							</td><td>
+								<ul>
+									<li>Group Five</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+								</ul>
+							</td><td>
+								<ul>
+									<li>Group Six</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+									<li>Name Name</li>
+								</ul>
+							</td></tr>
+						</tbody></table>
+						<aside class="notes">Split the room into 6 groups and assign each group a pair of ciphers (one substitution, one transposition). Then pair groups together to determine who cracks who. A recommended selection is:
+							<ul>
+								<li>(affine, rail fence) vs (playfair, fleissner)</li>
+								<li>(checkerboard, single letter) vs (Myszkowski, pig pen)</li>
+								<li>(Trifid, columnar) vs (route, mixed alphabet)</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>The Teachers</h2>
+						<p class="fragment">Every group can hack them</p>
+						<p class="fragment">They're hacking every group</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Task 1</h2>
+					<p>Come up with a group name</p>
+				</section>
+
+				<section>
+					<h2>Task 2</h2>
+					<p>Learn your ciphers</p>
+					<p>&nbsp;</p>
+					<p><a href="http://www.scytale.xyz">www.scytale.xyz</a></p>
+					<aside class="notes">
+						<ul>
+							<li>On this website is a page for each cipher</li>
+							<li>Find yours and learn how they work</li>
+							<li>Each has an example plaintext and ciphertext</li>
+							<li>Encrypt and decrypt each and then check with me that you got it right</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Game</h2>
+						<ul>
+							<li class="fragment">Create secret keys for your two ciphers</li>
+							<li class="fragment">Use these keys to encrypt messages that you give to your opponents</li>
+							<li class="fragment">Try to break the encryption of your opponents' messages</li>
+						</ul>
+					</section>
+					<section>
+						<h2>The Rules</h2>
+						<ol>
+							<li class="fragment">To get a message from your opponents you must give one to them</li>
+							<li class="fragment">You cannot refuse a request</li>
+							<li class="fragment">You must use English sentences</li>
+							<li class="fragment">You cannot change your keys</li>
+							<li class="fragment">Messages must be like-for-like</li>
+						</ol>
+						<aside class="notes">
+							<ul>
+								<li>like-for-like means known-plaintext for known-plaintext</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Task 3</h2>
+					<p>Decide on your secret keys</p>
+					<aside class="notes">
+						<ul>
+							<li>There are some key sheets</li>
+							<li>Pick a key and write it down on these sheets</li>
+							<li>You cannot change the key when you pick it</li>
+							<li>You must keep these sheets safe</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Task 4</h2>
+					<p>Encrypt your first messages</p>
+					<aside class="notes">
+						<ul>
+							<li>You can encrypt any sentence of your choosing</li>
+							<li>You must encrypt two messages</li>
+							<li>One substitution, one transposition</li>
+							<li>There are sheets for writing down your plaintext message and you ciphertext message</li>
+							<li>Give the ciphertext to your opponents</li>
+							<li>Don't give them your key or your plaintext</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Hacking</h2>
+					</section>
+					<section>
+						<h2>Brute Force</h2>
+						<p>Try every possible key</p>
+					</section>
+					<section>
+						<h2>Frequency Analysis</h2>
+						<p>Works on substitution ciphers</p>
+						<p>How common are letters in the English language?</p>
+						<p>How common are letters in the ciphertext?</p>
+					</section>
+					<section>
+						<h2>Known Plaintext</h2>
+						<p>Works on transposition ciphers</p>
+						<p>If you know how one message was shuffled, you know how they all are</p>
+					</section>
+					<section>
+						<h2>Any Ideas?</h2>
+					</section>
+				</section>
+
+				<section>
+					<h2>Task 5</h2>
+					<p>Encrypt and hack</p>
+				</section>
+
+				<section>
+					<h2>Key Exchange</h2>
+				</section>
+
+				<section>
+					<h2>Task 6</h2>
+					<p>Encrypt and hack some more</p>
+					<p>Prepare a presentation</p>
+				</section>
+
+			</div>
+
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'solarized', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+				backgroundTransition: 'linear',
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+		<script type="text/javascript" src="js/scytale.js"></script>
+	</body>
+</html>

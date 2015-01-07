@@ -1,0 +1,36 @@
+.scytale-task .timer {
+    font-size: 2em;
+    margin-top: 40px;
+}
+.thisevening ol li {
+    margin: 10px 0;
+}
+.yourgroups table {
+    margin: auto;
+}
+.yourgroups table ul {
+    list-style-type: none;
+}
+.yourgroups table td {
+    padding: 10px;
+}
+.substitutionciphers table {
+    font-family: monospace;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.modarith .top code {
+    margin: 0 50px;
+}
+.modarith .top {
+    margin-bottom: 50px;
+}
+.small {
+    font-size: 0.8em !important;
+}
+.pale {
+    opacity: 0.5;
+}
+.block {
+    text-align: left;
+}
